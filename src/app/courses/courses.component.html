@@ -1,0 +1,22 @@
+<p>courses works!</p>
+
+<p>Table is just a mapping of objects to table rows with <code>ngFor</code></p>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Nombre</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let curso of arr; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>
+        {{curso.text}}
+    </td>
+    
+ 
+  </tr>
+  </tbody>
+</table>

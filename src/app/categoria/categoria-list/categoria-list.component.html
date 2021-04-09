@@ -1,0 +1,24 @@
+<p>categoria-list works!</p>
+
+
+
+  <table>
+    <thead>
+        <th>Nombre</th>
+        <th>Imagen</th>
+        <th>Acciones</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let category of categories">
+            <td>{{category.nombre}}</td>
+            <td><img src="http://127.0.0.1:8000/static{{category.imagen}}"></td>
+            <td>
+                <!-- <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon> -->
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <!-- <i><Icon.Pencil id="edit" class="iconos"></Icon.Pencil></i> -->
+                <!-- <i><Icon.DashCircleFill id="delete" class="iconos"></Icon.DashCircleFill></i> -->
+              
+            </td>
+        </tr>
+    </tbody>
+</table>
